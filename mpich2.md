@@ -95,11 +95,11 @@ $ ufw disable
 ```
 
 ## Check mpd & exec
-处理思路：单机运行 -> 两台机器之间运行 -> 多台机器之间运行
-启动：`mpd &`
-查看mpd情况：`mpdtrace`
-关闭全部mpd：`mpdallexit`
-检查和其他机器的连接：`mpdcheck -f  ~/mpd.hosts -ssh`
-启动mpd（数字3要改成host的数量） `mpdboot -n 3 -f ~/mpd.hosts -v `
-编译程序：`make clean && make cpi`
-运行程序（10代表线程数 ./cpi是编译后的程序名） `mpirun -np 10 ./cpi`
+* 处理思路：单机运行 -> 两台机器之间运行 -> 多台机器之间运行
+* 启动：`mpd &`
+* 查看mpd情况：`mpdtrace`
+* 关闭全部mpd：`mpdallexit`
+* 检查和其他机器的连接：`mpdcheck -f  ~/mpd.hosts -ssh`
+* 启动mpd（数字3要改成host的数量） `mpdboot -n 3 -f ~/mpd.hosts -v `
+* 编译程序：`make clean && make cpi`
+* 运行程序（10代表线程数 ./cpi是编译后的程序名） `mpirun -np 10 ./cpi`
